@@ -46,7 +46,7 @@ export function CartPanel() {
             <div className="flex items-center justify-between p-6 border-b border-[#e5e5e5]">
               <div className="flex items-center gap-2">
                 <ShoppingBag className="w-5 h-5 text-text-primary" />
-                <h2 className="font-serif text-lg text-text-primary">Your Cart</h2>
+                <h2 className="text-lg text-text-primary font-bold">Your Cart</h2>
               </div>
               <button onClick={() => setOpen(false)} className="text-text-muted hover:text-text-primary cursor-pointer">
                 <X className="w-5 h-5" />

@@ -82,7 +82,7 @@ function FeaturedCard({ product, index }: { product: Product; index: number }) {
         <div className="flex items-start justify-between">
           <div>
             <p className="text-[10px] uppercase tracking-[0.2em] text-text-muted">Hypoallergenic</p>
-            <h3 className="font-serif text-base text-text-primary">{product.name}</h3>
+            <h3 className="text-base text-text-primary font-semibold">{product.name}</h3>
           </div>
           <button
             onClick={handleWishlist}
@@ -129,7 +129,7 @@ export function Featured() {
           {/* Left — Text */}
           <ScrollReveal>
             <div>
-              <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-text-primary leading-tight mb-6">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl text-text-primary leading-tight mb-6 font-bold">
                 Earrings &amp;<br />
                 <span className="italic">Accessories</span>
               </h2>

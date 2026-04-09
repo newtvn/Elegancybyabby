@@ -40,7 +40,7 @@ export default function AdminProductsPage() {
 
   return (
     <div>
-      <h1 className="font-serif text-2xl text-text-primary mb-6">Products</h1>
+      <h1 className="text-2xl text-text-primary mb-6 font-bold">Products</h1>
       <ProductTable products={products} />
     </div>
   );

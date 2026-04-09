@@ -25,8 +25,8 @@ export function OurStory() {
                 transition={{ delay: 0.3, duration: 0.5 }}
                 className="absolute -bottom-6 -right-6 bg-white rounded-2xl p-5 card-shadow border border-[#e5e5e5]"
               >
-                <p className="font-serif italic text-lg text-text-primary">&ldquo;Beauty is how</p>
-                <p className="font-serif italic text-lg text-text-primary">you define it.&rdquo;</p>
+                <p className="italic text-lg text-text-primary font-semibold">&ldquo;Beauty is how</p>
+                <p className="italic text-lg text-text-primary font-semibold">you define it.&rdquo;</p>
               </motion.div>
             </div>
           </ScrollReveal>
@@ -34,7 +34,7 @@ export function OurStory() {
           <ScrollReveal delay={0.15}>
             <div>
               <p className="text-[10px] uppercase tracking-[0.2em] text-text-muted mb-3">Our Story</p>
-              <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-text-primary leading-tight mb-6">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl text-text-primary leading-tight mb-6 font-bold">
                 A Passion for<br />
                 <span className="italic">Style &amp; Accessorizing</span>
               </h2>

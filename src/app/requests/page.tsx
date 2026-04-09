@@ -14,7 +14,7 @@ export default function RequestsPage() {
       <ScrollReveal>
         <div className="text-center mb-12">
           <p className="text-[10px] uppercase tracking-[0.2em] text-text-muted mb-3">Custom Orders</p>
-          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-text-primary mb-4">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl text-text-primary mb-4 font-bold">
             Special Requests
           </h1>
           <p className="text-text-muted max-w-md mx-auto leading-relaxed">

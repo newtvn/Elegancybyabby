@@ -30,7 +30,7 @@ export default function AdminRequestsPage() {
 
   return (
     <div>
-      <h1 className="font-serif text-2xl text-text-primary mb-6">Special Requests</h1>
+      <h1 className="text-2xl text-text-primary mb-6 font-bold">Special Requests</h1>
       <RequestsTable requests={requests} />
     </div>
   );

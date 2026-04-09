@@ -41,7 +41,7 @@ export function ProductCard({ product, featured = false }: ProductCardProps) {
         <div className="flex items-start justify-between">
           <div>
             <p className="text-[10px] uppercase tracking-[0.2em] text-text-muted">Categories</p>
-            <h3 className="font-serif text-base text-text-primary capitalize">{product.category}</h3>
+            <h3 className="text-base text-text-primary capitalize font-semibold">{product.category}</h3>
           </div>
           <button
             onClick={handleWishlist}

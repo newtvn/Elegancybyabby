@@ -56,7 +56,7 @@ export function Categories() {
           <div className="flex items-end justify-between mb-10">
             <div>
               <p className="text-xs uppercase tracking-[0.2em] text-text-muted mb-2">Categories</p>
-              <h2 className="font-serif text-3xl md:text-4xl text-text-primary">
+              <h2 className="text-3xl md:text-4xl text-text-primary font-bold">
                 Browse by Category
               </h2>
             </div>
@@ -95,7 +95,7 @@ export function Categories() {
                 <div className="w-[280px] bg-white rounded-2xl overflow-hidden card-shadow hover:card-shadow-hover transition-shadow duration-300">
                   <div className="p-4 pb-2">
                     <p className="text-[10px] uppercase tracking-[0.2em] text-text-muted">Categories</p>
-                    <h3 className="font-serif text-xl text-text-primary mt-1">{cat.label}</h3>
+                    <h3 className="text-xl text-text-primary font-semibold mt-1">{cat.label}</h3>
                   </div>
                   <div className="h-48 overflow-hidden mx-4 rounded-xl">
                     {/* eslint-disable-next-line @next/next/no-img-element */}

@@ -9,7 +9,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="md:col-span-1">
-            <h3 className="font-serif italic text-2xl text-white mb-4">Elegancy</h3>
+            <h3 className="italic text-2xl text-white mb-4 font-bold">Elegancy</h3>
             <p className="text-[10px] uppercase tracking-[0.2em] text-white/30 mb-2">Redefining Beauty</p>
             <p className="text-white/50 text-sm leading-relaxed">
               Hair accessories &amp; hypoallergenic jewelry store. Next day delivery — pickup mtaani or doorstep.

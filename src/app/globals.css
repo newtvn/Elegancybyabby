@@ -43,13 +43,13 @@
 }
 
 body {
-  background-color: #faf9f6;
+  background-color: #f5f0e8;
   background-image:
-    radial-gradient(ellipse 80% 60% at 10% 20%, rgba(184, 134, 11, 0.22) 0%, transparent 70%),
-    radial-gradient(ellipse 60% 80% at 90% 10%, rgba(212, 160, 23, 0.18) 0%, transparent 60%),
-    radial-gradient(ellipse 70% 50% at 50% 90%, rgba(184, 134, 11, 0.16) 0%, transparent 60%),
-    radial-gradient(ellipse 50% 70% at 80% 60%, rgba(139, 90, 0, 0.14) 0%, transparent 50%),
-    radial-gradient(ellipse 60% 40% at 30% 70%, rgba(212, 160, 23, 0.15) 0%, transparent 55%);
+    radial-gradient(ellipse 90% 70% at 10% 20%, rgba(184, 134, 11, 0.40) 0%, transparent 70%),
+    radial-gradient(ellipse 70% 90% at 90% 10%, rgba(212, 160, 23, 0.35) 0%, transparent 60%),
+    radial-gradient(ellipse 80% 60% at 50% 90%, rgba(184, 134, 11, 0.30) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 80% at 80% 60%, rgba(139, 90, 0, 0.28) 0%, transparent 50%),
+    radial-gradient(ellipse 70% 50% at 30% 70%, rgba(212, 160, 23, 0.30) 0%, transparent 55%);
   background-attachment: fixed;
   color: var(--text-primary);
   font-family: var(--font-grotesk);
@@ -93,11 +93,11 @@ body {
 
 /* Stronger mesh for specific sections */
 .mesh-bg {
-  background-color: #faf9f6;
+  background-color: #f2ebe0;
   background-image:
-    radial-gradient(ellipse 70% 50% at 15% 40%, rgba(184, 134, 11, 0.25) 0%, transparent 65%),
-    radial-gradient(ellipse 60% 70% at 85% 20%, rgba(212, 160, 23, 0.20) 0%, transparent 55%),
-    radial-gradient(ellipse 80% 40% at 50% 85%, rgba(139, 90, 0, 0.18) 0%, transparent 60%);
+    radial-gradient(ellipse 80% 60% at 15% 40%, rgba(184, 134, 11, 0.45) 0%, transparent 65%),
+    radial-gradient(ellipse 70% 80% at 85% 20%, rgba(212, 160, 23, 0.38) 0%, transparent 55%),
+    radial-gradient(ellipse 90% 50% at 50% 85%, rgba(139, 90, 0, 0.35) 0%, transparent 60%);
 }
 
 /* Dark section with silk texture */

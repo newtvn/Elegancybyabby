@@ -53,7 +53,7 @@ export default function AdminLoginPage() {
     <div className="min-h-screen flex items-center justify-center px-6 mesh-bg">
       <div className="w-full max-w-sm">
         <div className="text-center mb-8">
-          <h1 className="font-serif text-3xl text-text-primary mb-2">Admin Login</h1>
+          <h1 className="text-3xl text-text-primary mb-2 font-bold">Admin Login</h1>
           <p className="text-text-muted text-sm">Elegancybyabby Dashboard</p>
         </div>
         <div className="bg-white rounded-2xl border border-[#e5e5e5] p-8 card-shadow">

@@ -35,7 +35,7 @@ export function Navbar() {
             className="rounded-full px-6 py-3 flex items-center justify-between backdrop-blur-xl border border-white/10"
           >
             {/* Logo */}
-            <Link href="/" className="font-serif italic text-lg tracking-wide" style={{ color: "inherit" }}>
+            <Link href="/" className="italic text-lg tracking-wide font-bold" style={{ color: "inherit" }}>
               Elegancy
             </Link>
 

@@ -30,7 +30,7 @@ export async function TrendingItems() {
         <ScrollReveal>
           <div className="text-center mb-12">
             <p className="text-[10px] uppercase tracking-[0.2em] text-text-muted mb-3">Trending</p>
-            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-text-primary">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl text-text-primary font-bold">
               Most Loved Pieces
             </h2>
           </div>

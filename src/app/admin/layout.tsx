@@ -77,7 +77,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
   return (
     <div className="min-h-screen flex bg-bg-secondary">
       <aside className="w-64 bg-white border-r border-[#e5e5e5] p-6 flex flex-col shrink-0">
-        <Link href="/admin" className="font-serif italic text-lg text-text-primary mb-8">
+        <Link href="/admin" className="italic text-lg text-text-primary mb-8 font-bold">
           Elegancy Admin
         </Link>
         <nav className="space-y-1 flex-1">
