@@ -1,26 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f7f4;
+  --bg-card: #ffffff;
+  --bg-card-hover: #fafafa;
+  --bg-dark: #0a0a0a;
+  --bg-dark-secondary: #1a1a1a;
+  --accent-gold: #b8860b;
+  --accent-gold-bright: #d4a017;
+  --text-primary: #0a0a0a;
+  --text-secondary: #3a3a3a;
+  --text-muted: #888888;
+  --text-light: #ffffff;
+  --border-color: #e5e5e5;
+  --border-hover: #cccccc;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-bg-primary: var(--bg-primary);
+  --color-bg-secondary: var(--bg-secondary);
+  --color-bg-card: var(--bg-card);
+  --color-bg-card-hover: var(--bg-card-hover);
+  --color-bg-dark: var(--bg-dark);
+  --color-bg-dark-secondary: var(--bg-dark-secondary);
+  --color-gold: var(--accent-gold);
+  --color-gold-bright: var(--accent-gold-bright);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-text-light: var(--text-light);
+  --font-grotesk: var(--font-space-grotesk), sans-serif;
+  --font-serif: 'Playfair Display', serif;
+
+  --animate-shimmer: shimmer 1.5s ease-in-out infinite;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #faf9f6;
+  background-image:
+    radial-gradient(ellipse 80% 60% at 10% 20%, rgba(184, 134, 11, 0.22) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 80% at 90% 10%, rgba(212, 160, 23, 0.18) 0%, transparent 60%),
+    radial-gradient(ellipse 70% 50% at 50% 90%, rgba(184, 134, 11, 0.16) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 70% at 80% 60%, rgba(139, 90, 0, 0.14) 0%, transparent 50%),
+    radial-gradient(ellipse 60% 40% at 30% 70%, rgba(212, 160, 23, 0.15) 0%, transparent 55%);
+  background-attachment: fixed;
+  color: var(--text-primary);
+  font-family: var(--font-grotesk);
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+/* Utility classes */
+.gold-border {
+  border: 1px solid var(--border-color);
+}
+
+.gold-border-hover {
+  border: 1px solid var(--border-hover);
+}
+
+.gold-glow {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+.card-shadow {
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+}
+
+.card-shadow-hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+.skeleton-shimmer {
+  background: linear-gradient(
+    90deg,
+    #f0f0f0 25%,
+    #e0e0e0 50%,
+    #f0f0f0 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+}
+
+/* Stronger mesh for specific sections */
+.mesh-bg {
+  background-color: #faf9f6;
+  background-image:
+    radial-gradient(ellipse 70% 50% at 15% 40%, rgba(184, 134, 11, 0.25) 0%, transparent 65%),
+    radial-gradient(ellipse 60% 70% at 85% 20%, rgba(212, 160, 23, 0.20) 0%, transparent 55%),
+    radial-gradient(ellipse 80% 40% at 50% 85%, rgba(139, 90, 0, 0.18) 0%, transparent 60%);
+}
+
+/* Dark section with silk texture */
+.silk-bg {
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 30%, #0d0d0d 60%, #111111 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.silk-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 30% 50%, rgba(184, 134, 11, 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse at 70% 30%, rgba(255, 255, 255, 0.03) 0%, transparent 50%);
 }
